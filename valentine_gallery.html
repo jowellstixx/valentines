@@ -60,11 +60,17 @@
             overflow: hidden;
             cursor: pointer;
             transition: transform 0.5s ease;
-            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            background: #1a1a1a;
         }
 
         .photo-card:hover {
             transform: translateY(-10px);
+        }
+
+        .photo-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         .photo-placeholder {
@@ -332,66 +338,54 @@
 
     <div class="gallery-container">
         <div class="gallery-grid">
+            <!-- PHOTO 1 -->
             <div class="photo-card">
-                <div class="photo-placeholder">
-                    <div class="photo-icon">📸</div>
-                    <div class="photo-label">Our First Adventure</div>
-                </div>
+                <img src="photos/first_selfie.JPG" alt="Our First Selfie">
                 <div class="photo-overlay">
-                    <div class="photo-caption">The Beginning</div>
+                    <div class="photo-caption">A Photo of What was The Beginning</div>
                     <div class="photo-description">Where it all started...</div>
                 </div>
             </div>
 
+            <!-- PHOTO 2 -->
             <div class="photo-card">
-                <div class="photo-placeholder">
-                    <div class="photo-icon">🌅</div>
-                    <div class="photo-label">Sunset Together</div>
-                </div>
+                <img src="photos/first_selfie_nigeria.JPG" alt="Sunset Together">
                 <div class="photo-overlay">
                     <div class="photo-caption">Golden Hour</div>
-                    <div class="photo-description">Perfect moments at dusk</div>
+                    <div class="photo-description">First Selfie After Almost 10years</div>
                 </div>
             </div>
 
+            <!-- PHOTO 3 -->
             <div class="photo-card">
-                <div class="photo-placeholder">
-                    <div class="photo-icon">💫</div>
-                    <div class="photo-label">Stargazing Night</div>
-                </div>
+                <img src="photos/husband_wife.HEIC" alt="Stargazing Night">
                 <div class="photo-overlay">
                     <div class="photo-caption">Under the Stars</div>
                     <div class="photo-description">Lost in wonder together</div>
                 </div>
             </div>
 
+            <!-- PHOTO 4 -->
             <div class="photo-card">
-                <div class="photo-placeholder">
-                    <div class="photo-icon">🎭</div>
-                    <div class="photo-label">Being Silly</div>
-                </div>
+                <img src="photos/date_night.HEIC" alt="Being Silly">
                 <div class="photo-overlay">
                     <div class="photo-caption">Genuine Laughter</div>
                     <div class="photo-description">Your smile lights up my world</div>
                 </div>
             </div>
 
+            <!-- PHOTO 5 -->
             <div class="photo-card">
-                <div class="photo-placeholder">
-                    <div class="photo-icon">🍃</div>
-                    <div class="photo-label">Nature Walk</div>
-                </div>
+                <img src="photos/park_inn.HEIC" alt="Nature Walk">
                 <div class="photo-overlay">
                     <div class="photo-caption">Peaceful Moments</div>
                     <div class="photo-description">Finding beauty in simplicity</div>
                 </div>
             </div>
 
+            <!-- PHOTO 6 -->
             <div class="photo-card">
-                <div class="photo-placeholder">
-                    <div class="photo-icon">☕</div>
-                    <div class="photo-label">Coffee Date</div>
-                </div>
+                <img src="photos/fave.jpg" alt="Coffee Date">
                 <div class="photo-overlay">
                     <div class="photo-caption">Cozy Conversations</div>
                     <div class="photo-description">Hours feel like minutes with you</div>
@@ -404,23 +398,34 @@
         <h2 class="slideshow-title">OUR STORY IN FRAMES</h2>
         
         <div class="slideshow-container">
+            <!-- SLIDESHOW PHOTO 1 -->
             <div class="slide active">
-                <div class="slide-placeholder-large">Photo 1: The First Date 💑</div>
+                <img src="images/slide1.jpg" alt="The First Date">
             </div>
+            
+            <!-- SLIDESHOW PHOTO 2 -->
             <div class="slide">
-                <div class="slide-placeholder-large">Photo 2: That Perfect Day 🌸</div>
+                <img src="images/slide2.jpg" alt="That Perfect Day">
             </div>
+            
+            <!-- SLIDESHOW PHOTO 3 -->
             <div class="slide">
-                <div class="slide-placeholder-large">Photo 3: Making Memories 🎈</div>
+                <img src="images/slide3.jpg" alt="Making Memories">
             </div>
+            
+            <!-- SLIDESHOW PHOTO 4 -->
             <div class="slide">
-                <div class="slide-placeholder-large">Photo 4: Your Beautiful Smile 😊</div>
+                <img src="images/slide4.jpg" alt="Your Beautiful Smile">
             </div>
+            
+            <!-- SLIDESHOW PHOTO 5 -->
             <div class="slide">
-                <div class="slide-placeholder-large">Photo 5: Adventure Together 🗺️</div>
+                <img src="images/slide5.jpg" alt="Adventure Together">
             </div>
+            
+            <!-- SLIDESHOW PHOTO 6 -->
             <div class="slide">
-                <div class="slide-placeholder-large">Photo 6: Forever Moments 💍</div>
+                <img src="images/slide6.jpg" alt="Forever Moments">
             </div>
 
             <button class="arrow arrow-left" onclick="changeSlide(-1)">❮</button>
